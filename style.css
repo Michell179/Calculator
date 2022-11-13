@@ -1,0 +1,131 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+}
+
+/* Style Body Calc */
+
+.body-calc {
+    border-radius: 20px;
+    box-shadow: 33px 13px 49px 12px rgba(48,173,227,0.78);
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    flex-basis: 300px;
+    height: 540px;
+    padding: 40px 2px;
+}
+
+.result {
+    backdrop-filter: blur(5.5px);
+    font-size: 50px;
+    overflow: auto;
+    padding: 40px;
+    text-align: right;
+    color: aliceblue;
+}
+
+/* Add presentation all buttons */
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+    margin-inline: 10px;
+    padding-inline: 5px;
+    padding: 2px;
+}
+
+.buttons-operators {
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    flex-basis: 24%;
+    font-family: inherit;
+    font-size: 20px;
+    height: 65px;
+    color: rgb(4, 203, 248);
+    background-color: rgb(45, 44, 44)
+}
+
+.buttons-operators:last-child{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 16px;
+    color: rgb(175, 245, 245);
+    background-color: rgb(65, 89, 212);
+}
+
+/* Add Style a operators buttons */
+
+.double {
+    backdrop-filter: blur(5.5px);
+    font-size: 30px;
+    overflow: auto;
+    padding-left: 20;
+    flex-basis: 30%;
+    background: rgb(150, 150, 150);
+    color: rgb(0, 0, 0);
+}
+
+.delete {
+    backdrop-filter: blur(5.5px);
+    font-size: 30px;
+    overflow: auto;
+    padding-left: 20;
+    flex-basis: 40%;
+    background: rgb(150, 150, 150);
+    color: rgb(0, 0, 0);
+}
+
+.equal {
+    backdrop-filter: blur(5.5px);
+    font-size: 50px;
+    overflow: auto;
+    padding-left: 20;
+    flex-basis: 60%;
+    background: rgb(150, 150, 150);
+}
+
+.zero {
+    backdrop-filter: blur(5.5px);
+    overflow: auto;
+    padding-left: 20;
+    flex-basis: 35%;
+    font-size: 30px;
+}
+
+/* Animation click and active buttons */
+
+.buttons-operators:hover{
+    background: rgb(150, 150, 150);
+}
+
+.buttons-operators:active{
+    background: rgb(4, 203, 248);
+}
+
+.footer{   
+    background: rgb(4, 203, 248);
+    margin-top: 670px;
+    position:absolute;
+    box-shadow: 33px 13px 49px 12px rgba(48,173,227,0.78);
+}
+
+.footer-info {
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    
+}
